@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Turistico</title>
+    <style>
+        #map {
+            height: 90vh; /* Ajusta el tamaño del mapa al 100% del viewport height */
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+         input {
+            width: 70%; /* Ancho del input ajustado */
+            height: 40px;
+            border-radius: 4px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+            padding: 8px;
+            margin-top: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+   <input type ="text" id="place_input" placeholder="Ingresa una Ubicación">
+    <div id="map"></div>
+    <script>
+        const argCoords = { lat: 8.6444, lng: -83.1714 };
+        const input = document.getElementById("place_input");
+        let map;
+        let marker;
+        let autocomplete;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: argCoords, // Coordenadas adaptadas del formato
+                zoom: 17
+                
+            });
+
+            marker = new google.maps.Marker({
+                position: argCoords,
+                map: map
+            });
+            initAutocomplete();
+        }
+         // Función para inicializar el autocompletado de lugares
+        function initAutocomplete(){
+            autocomplete = new google.maps.places.Autocomplete(input);
+            autocomplete.addListener('place_changed', function(){
+                const place = autocomplete.getPlace();
+                map.setCenter(place.geometry.location);
+                marker.setPosition(place.geometry.location);
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSl2R58Jazkr3s6Ik9b1I2b2AJfC6r6fE&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>

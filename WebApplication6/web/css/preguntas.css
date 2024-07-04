@@ -1,0 +1,166 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 3 jul. 2024, 21:34:07
+    Author     : barro
+*/
+/* Reset básico */
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.ibb.co/Gp3H375/Imagen-de-Whats-App-2024-07-02-a-las-19-06-14-f711e5a9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333333;
+}
+
+/* Contenedor principal */
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+/* Botones de pregunta */
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    background-color: #8ed8f8;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    outline: none;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.faq-question:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Respuestas ocultas */
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+    border-left: 4px solid #8ed8f8;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Mostrar respuesta al activar */
+.faq-answer.show {
+    display: block;
+}
+
+/* Estilo del texto de las respuestas */
+.faq-answer p {
+    margin: 2;
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif; /* Cambio de fuente */
+    line-height: 2; /* Espaciado entre líneas */
+}
+
+/* Listas en las respuestas */
+.faq-answer ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.faq-answer ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Botón de enviar correo */
+.send-email-button {
+    display: inline-block; /* Para que respete márgenes y dimensiones */
+    padding: 10px 15px; /* Ajuste del padding para reducir el tamaño del botón */
+    background-color: #8ed8f8;
+    color: #000000;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente reducido para el botón */
+    margin-bottom: 10px; /* Márgenes igual que los otros botones */
+    outline: none;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none;
+    width: auto; /* Ancho automático para ajustarse al contenido */
+}
+
+.send-email-button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Tablets y dispositivos con ancho máximo de 768px */
+@media (max-width: 768px) {
+    .faq-container {
+        max-width: 90%; /* Reducir el ancho máximo del contenedor principal */
+        margin: 30px auto; /* Ajustar el margen para centrar */
+        padding: 15px; /* Reducir el padding del contenedor */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Reducir el tamaño de fuente del título principal */
+    }
+
+    .faq-question {
+        font-size: 16px; /* Reducir el tamaño de fuente de los botones de pregunta */
+    }
+
+    .faq-answer p {
+        font-size: 12px; /* Reducir el tamaño de fuente del texto de las respuestas */
+    }
+
+    .send-email-button {
+        font-size: 14px; /* Reducir el tamaño de fuente del botón de enviar correo */
+        padding: 8px 12px; /* Ajuste del padding para dispositivos más pequeños */
+    }
+}
+
+/* Teléfonos y dispositivos con ancho máximo de 480px */
+@media (max-width: 480px) {
+    .faq-container {
+        max-width: 100%; /* Utilizar el ancho completo para pantallas pequeñas */
+        margin: 20px auto; /* Ajustar el margen para centrar */
+        padding: 10px; /* Reducir el padding del contenedor */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reducir aún más el tamaño de fuente del título principal */
+    }
+
+    .faq-question {
+        font-size: 14px; /* Reducir el tamaño de fuente de los botones de pregunta */
+        padding: 12px; /* Ajuste del padding para dispositivos más pequeños */
+    }
+
+    .faq-answer p {
+        font-size: 11px; /* Reducir el tamaño de fuente del texto de las respuestas */
+    }
+
+    .send-email-button {
+        font-size: 12px; /* Reducir el tamaño de fuente del botón de enviar correo */
+        padding: 8px 10px; /* Ajuste del padding para dispositivos más pequeños */
+    }
+}

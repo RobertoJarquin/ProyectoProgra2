@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Simposio</title>
+    <link rel="stylesheet" href="css/preguntas.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Preguntas Frecuentes</h1> <!-- Título principal de la página -->
+        
+        <!-- Pregunta frecuente 1 -->
+        <button class="faq-question">¿Cuándo es la fecha de inscripción?</button>
+        <div class="faq-answer">
+            <ul>
+                <li>Las inscripciones serán del 10 al 20 de julio.</li>
+                <li>Las personas podrán ingresar en la página para registrarse en algún taller.</li>
+                <li>Al ingresar en el sitio web, deberás ir a la parte del cronograma del evento, donde verás los horarios de los talleres y con esto decidir en cuál te quieres registrar.</li>
+                <li>Luego, dirígete al taller que deseas asistir y regístrate para asegurar tu cupo.</li>
+            </ul>
+        </div>
+
+        <!-- Pregunta frecuente 2 -->
+        <button class="faq-question">¿Cuáles son las opciones de alojamiento?</button>
+        <div class="faq-answer">
+            <ul>
+                <li>En la ciudad de Golfito existen muchos lugares para poder hospedarse.</li>
+                <li>Uno de los lugares más completos y cercanos a la Sede del Sur es el Hotel Casa Roland, el cual cuenta con todas las comodidades posibles, desde restaurante y bar hasta piscina.</li>
+                <li>Cuentan con un gimnasio totalmente equipado, y este hotel está a solo 300 metros de la universidad, donde se llevarán a cabo todos los eventos y talleres.</li>
+            </ul>
+        </div>
+
+        <!-- Pregunta frecuente 3 -->
+        <button class="faq-question">¿Qué opciones de transporte están disponibles?</button>
+        <div class="faq-answer">
+            <ul>
+                <li>El transporte depende de cada universidad o lugar de origen.</li>
+                <li>Este será proporcionado por la universidad de la que vengas.</li>
+                <li>Los cupos son limitados, por lo que deberás hablar con el docente a cargo para planear o detallar este tema de transporte.</li>
+            </ul>
+        </div>
+
+     
+       <!-- Botón para enviar correo electrónico -->
+<a href="Correo.html" class="faq-question send-email-button">Enviar Correo</a>
+
+
+    </div>
+
+    <script>
+        // Agregar un evento de clic a cada botón de pregunta frecuente
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling; // Selecciona el siguiente elemento hermano (la respuesta)
+                answer.classList.toggle('show'); // Alterna la clase 'show' para mostrar/ocultar la respuesta
+            });
+        });
+    </script>
+</body>
+</html>

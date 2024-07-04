@@ -1,0 +1,305 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 3 jul. 2024, 23:01:14
+    Author     : barro
+*/
+.mapa {
+    position: relative;
+    width: 800px; /* Ancho del mapa */
+    height: 1000px; /* Alto del mapa */
+    background-color: #f5f5f5; /* Fondo del mapa */
+    border: 1px solid #ccc; /* Borde del mapa */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del mapa */
+}
+
+/* Estilos base para los puntos de interés */
+.punto-interes {
+    position: absolute;
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    cursor: pointer; /* Cursor para indicar interactividad */
+    display: flex; /* Para centrar el texto */
+    justify-content: center; /* Para centrar el texto horizontalmente */
+    align-items: center; /* Para centrar el texto verticalmente */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.linea-diagonal {
+    position: absolute;
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    cursor: pointer; /* Cursor para indicar interactividad */
+    display: flex; /* Para centrar el texto */
+    justify-content: center; /* Para centrar el texto horizontalmente */
+    align-items: center; /* Para centrar el texto verticalmente */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Alinear texto al centro */
+}
+
+/* Estilo para resaltar el camino más corto */
+.camino {
+    background-color: yellow; /* Color para resaltar el camino */
+}
+
+/* Estilos para puntos de interés específicos */
+.TeachersRoom {
+    background-color: #2980b9; /* Azul claro */
+    width: 250px;
+    height: 120px;
+}
+
+.Office1 {
+    background-color: #2980b9; /* Azul más oscuro */
+    width: 250px;
+    height: 60px;
+}
+
+.RestArea {
+    background-color: #2980b9; /* Azul más oscuro */
+    width: 140px;
+    height: 60px;
+}
+
+.Nursing {
+    background-color: #2980b9; /* Azul más oscuro */
+    width: 200px;
+    height: 60px;
+}
+
+.Classrom5 {
+    background-color: #e74c3c; /* Rojo */
+    width: 200px;
+    height: 100px;
+}
+
+.RestArea {
+    background-color: #2980b9;
+    width: 150px;
+    height: 60px;
+}
+
+.MenBathroom {
+    background-color: #95a5a6; /* Gris */
+    width: 55px;
+    height: 40px;
+}
+
+.WomenBathroom {
+    background-color: #2980b9; /* Azul claro */
+    width: 55px;
+    height: 40px;
+}
+
+.Psychology {
+    background-color: #2980b9; /* Azul más oscuro */
+    width: 75px;
+    height: 120px;
+}
+
+.Laboratory {
+    background-color: #2ecc71; /* Verde */
+    width: 95px;
+    height: 50px;
+}
+
+.Classrom2 {
+    background-color: #c0392b; /* Rojo oscuro */
+    width: 150px;
+    height: 90px;
+}
+
+.Classrom3  {
+    background-color: #f39c12; /* Naranja */
+    width: 185px;
+    height: 80px;
+}
+
+.Classrom4{
+    background-color: #f39c12; /* Naranja */
+    width: 185px;
+    height: 80px;
+}
+
+.MeetingRoom {
+    background-color: #2980b9; /* Azul más oscuro */
+    width: 150px;
+    height: 80px;
+}
+
+.Anfiteatro {
+    background-color: #2980b9; /* Azul más oscuro */
+    width: 150px;
+    height: 80px;
+}
+
+.Hangar {
+    background-color: #2980b9; /* Azul más oscuro */
+    width: 80px;
+    height: 50px;
+}
+
+.Entrada {
+    background-color: #7750b2; /* Azul más oscuro */
+    width: 50px;
+    height: 120px;
+}
+
+.Cesped {
+    background-color: #6B8E23;
+    width: 185px;
+    height: 100px;
+}
+
+.Cesped2 {
+    background-color: #6B8E23;
+    width: 250px;
+    height: 100px;
+}
+
+.Calle {
+    background-color: #2F4F4F;
+    width: 670px;
+    height: 50px;
+}
+
+.Escaleras {
+    background-color: #808080;
+    width: 50px;
+    height: 40px;
+}
+
+.Calle2 {
+    background-color: #2F4F4F;
+    width: 380px;
+    height: 30px;
+}
+
+.Calle3 {
+    background-color: #2F4F4F;
+    width: 250px;
+    height: 30px;
+}
+
+.Residencia {
+    background-color: #2F4F4F;
+    width: 80px;
+    height: 60px;
+}
+
+.linea-diagonal {
+    position: absolute;
+    width: 50px; /* Ajusta según sea necesario */
+    height: 10px; /* Ajusta según sea necesario */
+    background-color:#D2B48C; /* Estilo de línea diagonal */
+    transform: rotate(50deg); /* Rotación para hacerla diagonal */
+    left: 375px; /* Posición horizontal */
+    top: 670px; /* Posición vertical */
+}
+
+.a2 {
+    position: absolute;
+    width: 60px; /* Ajusta según sea necesario */
+    height: 15px; /* Ajusta según sea necesario */
+    background-color:#D2B48C; /* Estilo de línea diagonal */
+    transform: rotate(-60deg); /* Rotación para hacerla diagonal */
+    left: 320px; /* Posición horizontal */
+    top: 680px; /* Posición vertical */
+}
+
+.a3 {
+    position: absolute;
+    width: 75px; /* Ajusta según sea necesario */
+    height: 23px; /* Ajusta según sea necesario */
+    background-color:#2F4F4F; /* Estilo de línea diagonal */
+    transform: rotate(-34deg); /* Rotación para hacerla diagonal */
+    left: 330px; /* Posición horizontal */
+    top: 710px; /* Posición vertical */
+}
+
+.a4 {
+    position: absolute;
+    width: 150px; /* Ajusta según sea necesario */
+    height: 30px; /* Ajusta según sea necesario */
+    background-color: #D2B48C; /* Estilo de línea diagonal */
+    transform: rotate(45deg); /* Rotación para hacerla diagonal */
+    left: 250px; /* Posición horizontal */
+    top: 770px; /* Posición vertical */
+}
+
+.Pasillo {
+    background-color: #D2B48C;
+    width: 485px;
+    height: 20px;
+}
+
+.Pasillo2 {
+    background-color: #D2B48C;
+    width: 110px;
+    height: 20px;
+}
+
+.Pasillo3 {
+    background-color: #D2B48C;
+    width:90px;
+    height: 20px;
+}
+
+.Pasillo4 {
+    background-color: #D2B48C;
+    width:105px;
+    height: 20px;
+}
+
+.Pasillo5 {
+    background-color: #D2B48C;
+    width:20px;
+    height: 55px;
+}
+
+.Pasillo6 {
+    background-color: #D2B48C;
+    width:38px;
+    height: 110px;
+}
+
+.Pasillo7 {
+    background-color: #D2B48C;
+    width:50px;
+    height: 20px;
+}
+
+.Pasillo8 {
+    background-color: #D2B48C;
+    width:20px;
+    height: 140px;
+}
+
+.Pasillo9 {
+    background-color: #D2B48C;
+    width:50px;
+    height: 180px;
+}
+
+.Pasillo10 {
+    background-color: #D2B48C;
+    width:95px;
+    height: 20px;
+}
+
+.Pasillo11 {
+    background-color: #D2B48C;
+    width:150px;
+    height: 20px;
+}
+
+.Camino {
+    background-color: #D2B48C;
+    width:300px;
+    height: 30px;
+}

@@ -1,0 +1,170 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 3 jul. 2024, 21:42:57
+    Author     : barro
+*/
+/* Estilos básicos del cuerpo y el contenedor principal */
+
+
+    .container {
+        max-width: 90%; /* Reducir el ancho máximo del contenedor principal */
+        margin: 50px auto; /* Ajustar el margen para centrar */
+        padding: 10px; /* Reducir el padding del contenedor */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Reducir el tamaño de fuente del título principal */
+    }
+
+    section h2 {
+        font-size: 1.5rem; /* Reducir el tamaño de fuente de los títulos de sección */
+    }
+
+    .carousel-item {
+        height: 200px; /* Ajustar la altura del carrusel para pantallas más pequeñas */
+    }
+
+/* Teléfonos y dispositivos con ancho máximo de 480px */
+
+    .container {
+        max-width: 100%; /* Utilizar el ancho completo para pantallas pequeñas */
+        margin: 30px auto; /* Ajustar el margen para centrar */
+        padding: 5px; /* Reducir el padding del contenedor */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Reducir aún más el tamaño de fuente del título principal */
+    }
+
+    section h2 {
+        font-size: 1.2rem; /* Reducir el tamaño de fuente de los títulos de sección */
+    }
+
+    .carousel-item {
+        height: 150px; /* Ajustar la altura del carrusel para pantallas muy pequeñas */
+    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://i.ibb.co/Gp3H375/Imagen-de-Whats-App-2024-07-02-a-las-19-06-14-f711e5a9.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 80px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #87CEEB;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Estilos de las secciones */
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    color: #87CEEB;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+section p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #87CEEB;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+   
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Tablets y dispositivos con ancho máximo de 768px */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Reducir el ancho máximo del contenedor principal */
+        margin: 50px auto; /* Ajustar el margen para centrar */
+        padding: 10px; /* Reducir el padding del contenedor */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Reducir el tamaño de fuente del título principal */
+    }
+
+    section h2 {
+        font-size: 1.5rem; /* Reducir el tamaño de fuente de los títulos de sección */
+    }
+
+    .carousel-item {
+        height: 200px; /* Ajustar la altura del carrusel para pantallas más pequeñas */
+    }
+}
+
+/* Teléfonos y dispositivos con ancho máximo de 480px */
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%; /* Utilizar el ancho completo para pantallas pequeñas */
+        margin: 30px auto; /* Ajustar el margen para centrar */
+        padding: 5px; /* Reducir el padding del contenedor */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Reducir aún más el tamaño de fuente del título principal */
+    }
+
+    section h2 {
+        font-size: 1.2rem; /* Reducir el tamaño de fuente de los títulos de sección */
+    }
+
+    .carousel-item {
+        height: 150px; /* Ajustar la altura del carrusel para pantallas muy pequeñas */
+    }
+}

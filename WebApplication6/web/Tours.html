@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourly - Travel agancy</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="css/Tourismo.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+  <style>
+      /* Estilos generales de la sección */
+      .popular {
+          position: relative;
+          padding: 50px 0;
+          text-align: center;
+      }
+      /* Contenedor del título con imagen de fondo */
+      .section-title {
+          position: relative;
+          display: inline-block;
+          padding: 20px 40px;
+          background-image: url('https://i.ibb.co/vDcHjDW/pixelcut-export-8.jpg');
+          background-size: cover;
+          background-position: center;
+          color: white; /* Color del texto para que contraste con la imagen de fondo */
+          font-size: 2.5em; /* Tamaño del texto del título */
+          font-weight: bold; /* Grosor del texto del título */
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto para mejor legibilidad */
+          border-radius: 10px; /* Bordes redondeados */
+      }
+      .section-subtitle, .section-text {
+          color: #333; /* Color del texto de los subtítulos y párrafos */
+          margin-bottom: 20px; /* Margen inferior para espacio entre elementos */
+      }
+      
+      
+      
+      
+      
+      /*CSS DE LOS LUGARES TURISTICOS*/
+      body {
+          font-family: 'Montserrat', 'Poppins', sans-serif;
+          background-color:  #b9d989; /* Color beige */
+      }
+
+      .popular-card {
+          background-color: #ffffff;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 4.8); /* Sombra suave */
+          overflow: hidden;
+          transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .popular-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al hacer hover */
+      }
+
+      .card-img img {
+          width: 100%;
+          height: auto;
+          border-bottom: 5px solid #ddd;
+      }
+
+      .card-content {
+          padding: 20px;
+          text-align: center;
+      }
+
+      .h3.card-title {
+          font-size: 1.5rem;
+          color: #333;
+          margin-bottom: 10px;
+      }
+
+      .h3.card-title a {
+          text-decoration: none;
+          color: inherit;
+          transition: color 0.3s;
+      }
+
+      .h3.card-title a:hover {
+          color: #007BFF;
+      }
+
+      .card-text {
+          font-size: 1rem;
+          color: #666;
+          margin-bottom: 15px;
+      }
+
+      .popular-list {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          padding: 0;
+      }
+
+      .popular-list li {
+          flex: 1 1 calc(33.333% - 20px);
+          box-sizing: border-box;
+      }
+
+      @media (max-width: 768px) {
+          .popular-list li {
+              flex: 1 1 calc(50% - 20px);
+          }
+      }
+
+      @media (max-width: 480px) {
+          .popular-list li {
+              flex: 1 1 100%;
+          }
+      }
+    .btn-login {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #007bff;
+        color: #ffffff;
+        border: 2px solid #007bff;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    .btn-login:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+  </style>
+  <main>
+    <article>
+        <a class="btn btn-login" href="MP.html">MAPA Del Lugar</a>
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <h2 class="h2 section-title">Destinos populares</h2>
+
+          <p class="section-text">
+            "Descubre el paraiso donde la playa, la fauna y la flora se encuntran en perfecta armonia."
+          </p>
+
+          <ul class="popular-list">
+              <!-- 
+               Marina Bahía Golfito (HOTEL)       
+              -->
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/cQCWkhk/Marina-Bahia-Golfito-Amaka-Ocean-Living-Lodge.jpg" alt="La marina" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Marina Bahía Golfito (HOTEL)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+                  
+                </div>
+                  
+              </div>
+                <h7 class="h7 card-description">
+                    <a href="#">Esta hubicado frente a la playa, tiene muelle, restaurante, ademas de pequeños locales dentro del lugar. TEL: +506 8680 6090</a>
+               </h7>
+            </li>
+            <!-- 
+               Casa rolan (hotel)     
+              -->
+              <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/0Dxb430/pixelcut-export-4.jpg" alt="miraodr">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">Casa rolan (hotel)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                </div>
+
+              </div>
+                  <h7 class="h7 card-description">
+                    <a href="#">Tiene su restaurante, Gym, una hermosa piscina y difentes precios de hospedaje. TEL: +506 8776 5263</a>
+               </h7>
+            </li>
+            <li>
+                <!-- 
+               Samoa (hotel     
+              -->
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="https://i.ibb.co/SRtd28g/pixelcut-export-6.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">Samoa (hotel)</a>
+                  </h3>
+
+                   <p class="card-text">
+                    
+                  </p>
+                </div>
+
+              </div>
+               <h7 class="h7 card-description">
+                    <a href="#">Cuenta con una hermosa piscina para adultos y niños, frente a la playa y difentes precios de hospedaje. TEL: +506 2775 0237</a>
+               </h7>
+            </li>
+            <!-- 
+               La papota (BAR/RESTAURANTE)
+              -->
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/kgFHmNJ/photo1719984281.jpg" alt="miraodr">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">La papota (BAR/RESTAURANTE)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                </div>
+
+              </div>
+                <h7 class="h7 card-description">
+                    <a href="#">Restaurante con gran historia de golfito, deliciosos platillos con diseño rustico, pero elegante. TEL: +506 2102 9627</a>
+               </h7>
+            </li>
+            <!-- 
+               La pista (BAR/RESTAURANTE)
+              -->
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/LNtmkzL/pixelcut-export.jpg" alt="miraodr">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">La pista (BAR/RESTAURANTE)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                </div>
+
+              </div>
+                <h7 class="h7 card-description">
+                    <a href="#">Bar y restaurante, muy lindo y comodo cerca del aeropuerto para compartir en familia. TEL: +506 2775 9015</a>
+               </h7>
+            </li>
+            <!-- 
+               La bomba (BAR)
+              -->
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/VVdSR9K/photo1719971783.jpg" alt="miraodr">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">La bomba (BAR)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                </div>
+
+              </div>
+                <h7 class="h7 card-description">
+                    <a href="#">Bar con gran historia de Golfito, reconocido he identificado por años, cerca de la gasolinera la palma.</a>
+               </h7>
+            </li>
+            <!-- 
+               Deposito Libre (CENTRO COMERCIAL
+              -->
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/RzGHJHC/pixelcut-export-2.jpg" alt="miraodr">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">Deposito Libre (CENTRO COMERCIAL)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                </div>
+
+              </div>
+                <h7 class="h7 card-description">
+                    <a href="#">centro con una gran cantidad de locales con una gran variedad de producto, con precios muy buenos.</a>
+               </h7>
+            </li>
+             <!-- 
+               Zamia Wildlife Refuge (Mirador)    
+              -->
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/cY50BmR/photo1719965274.jpg" alt="miraodr">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">Zamia Wildlife Refuge (Mirador)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                </div>
+
+              </div>
+                <h7 class="h7 card-description">
+                    <a href="#">se llega por un sendero en medio del bosque, muy lindo para conectar con la naturaleza, al llegar arriba se aprecia una hermosa vista.</a>
+               </h7>
+            </li>
+            <!-- 
+               Cerro Adán (MIRADOR)
+              -->
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/W6kvZxY/photo1719984281-1.jpg" alt="miraodr">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">Cerro Adán (MIRADOR)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                </div>
+
+              </div>
+                <h7 class="h7 card-description">
+                    <a href="#">cerro con un camino amplio y acceso a vehiculos en el cual se puede recorrer el camino de diversos miradores con hermosas vistas de todo el golfo.</a>
+               </h7>
+            </li>
+            <!-- 
+               Cacao (PLAYA)
+              -->
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/rZMSDR1/photo1719973734.jpg" alt="miraodr">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">Cacao (PLAYA)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                </div>
+
+              </div>
+                <h7 class="h7 card-description">
+                    <a href="#">playa muy tranquila con sus restaurantes, perfecta para compartir en familia y disfrutar de un maravilloso lugar, con acceso de tierra y mar.</a>
+               </h7>
+            </li>
+            <!-- 
+               Punta silea (Playa)
+              -->
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/WK5Wq9j/pixelcut-export.png" alt="miraodr">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">Punta silea (Playa)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                </div>
+
+              </div>
+                <h7 class="h7 card-description">
+                    <a href="#">playa en la cual se puede ir a hacer un picnic, un poco aislada para los que les guta la tranquilidad con acceso por mar.</a>
+               </h7>
+            </li>
+            <!-- 
+               Refugio de Vida Silvestre Golfito (AREA PROTEGIDA)
+              -->
+             <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                    <img src="https://i.ibb.co/X3knPZR/photo1719982402.jpg" alt="miraodr">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#">Refugio de Vida Silvestre (AREA PROTEGIDA)</a>
+                  </h3>
+
+                  <p class="card-text">
+                    
+                  </p>
+
+                </div>
+
+              </div>
+                 <h7 class="h7 card-description">
+                    <a href="#">lugar para conectar con diversa cantidad de flora y fauna, perfecta para los amantes de la naturaleza.</a>
+               </h7>
+            </li>

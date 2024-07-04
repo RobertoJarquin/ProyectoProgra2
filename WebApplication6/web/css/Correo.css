@@ -1,0 +1,169 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 3 jul. 2024, 22:34:24
+    Author     : barro
+*/
+/* Media queries para dispositivos móviles */
+
+    main {
+        padding: 10px; /* Reducir el padding para mejor ajuste en dispositivos móviles */
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header .logo img {
+        width: 120px; /* Reducir el tamaño del logo para dispositivos móviles */
+    }
+
+    label,
+    input[type="text"],
+    textarea {
+        max-width: 100%; /* Ajustar el ancho máximo al tamaño de la pantalla */
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 8px 16px; /* Reducir el padding del botón para dispositivos móviles */
+        font-size: 14px; /* Reducir el tamaño de fuente del botón para dispositivos móviles */
+    }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; /* Color de fondo más oscuro */
+}
+
+header {
+    background-color: #1DACD6;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto; /* Añadido un margen superior para bajar el contenido */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+h1 {
+    color: #003480;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrando el formulario */
+}
+
+label {
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: left; /* Alineando el texto de los labels a la izquierda */
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #003480;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #002855;
+}
+
+.Inicio-button {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    color: #003480;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.Inicio-button:hover {
+    text-decoration: underline;
+}
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Tablets y dispositivos con ancho máximo de 768px */
+@media (max-width: 768px) {
+    header .logo img {
+        width: 120px; /* Reducir el tamaño del logo para dispositivos móviles */
+    }
+
+    button {
+        padding: 8px 16px; /* Reducir el padding del botón para dispositivos móviles */
+        font-size: 14px; /* Reducir el tamaño de fuente del botón para dispositivos móviles */
+    }
+}
+
+/* Teléfonos y dispositivos con ancho máximo de 480px */
+@media (max-width: 480px) {
+    header {
+        padding: 5px; /* Reducir el padding del encabezado */
+    }
+
+    main {
+        padding: 10px; /* Reducir el padding del contenido principal */
+    }
+
+    label,
+    input[type="text"],
+    textarea {
+        max-width: 100%; /* Ajustar el ancho máximo al tamaño de la pantalla */
+    }
+
+    button {
+        padding: 8px 12px; /* Ajustar el padding del botón para dispositivos móviles más pequeños */
+        font-size: 14px; /* Ajustar el tamaño de fuente del botón para dispositivos móviles más pequeños */
+    }
+}
